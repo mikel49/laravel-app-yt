@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<ruleset name="MonFramework">
+    <description>Mes règles de formatage</description>
+    
+    <arg name="colors"/>
+    <arg value="np"/>
+    <arg name="basepath" value="."/>
+    
+    <file></file>
+    <file>app</file>
+    <file>database</file>
+    <file>resources</file>
+    <file>routes</file>
+    <!--<exclude-pattern>*/src/Blog/*/views/*\.(php)$</exclude-pattern>-->
+    <!--<exclude-pattern>*/tests/Core/*/*Test\.(inc|css|js)$</exclude-pattern>-->
+
+    <rule ref="PSR2">
+        <exclude name = "PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+    </rule>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"></rule>
+    
+</ruleset>
+
